@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="orangeUdacity" type="color">#F08C35</item>
+    <item name="red" type="color">#D50000</item>
+    <item name="lightskyblue" type="color">#E3F2FD</item>
+</resources>

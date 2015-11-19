@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    android:background="#E3F2FD"
+    android:background="@color/lightskyblue"
     tools:context=".MainActivity">
 
 
@@ -22,87 +22,65 @@
         android:paddingLeft="55dp"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         />
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="45dp"
-        android:paddingRight="45dp">
+        android:layout_height="match_parent">
 
-        <Button
+        <LinearLayout
             android:layout_width="match_parent"
-            android:id="@+id/streamer_app"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:background="#F08C35"
-            android:layout_height="50dp"
-            android:text="@string/streamer_app"
-            android:onClick="showStreamerToast"
-            />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp">
 
-        <Button
-            android:layout_width="match_parent"
-            android:id="@+id/scorers_app"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:background="#F08C35"
-            android:layout_height="50dp"
-            android:text="@string/scorers_app"
-            android:onClick="showScorersToast"
-            />
+            <Button
+                android:id="@+id/streamer_app"
+                style="@style/MyButtonStyle"
+                android:text="@string/streamer_app"
+                android:onClick="showStreamerToast"
+                />
 
-        <Button
-            android:layout_width="match_parent"
-            android:id="@+id/lib_app"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:background="#F08C35"
-            android:layout_height="50dp"
-            android:text="@string/lib_app"
-            android:onClick="showLibToast"
-            />
+            <Button
+                style="@style/MyButtonStyle"
+                android:id="@+id/scorers_app"
+                android:text="@string/scorers_app"
+                android:onClick="showScorersToast"
+                />
 
-        <Button
-            android:layout_width="match_parent"
-            android:id="@+id/bib_app"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:background="#F08C35"
-            android:layout_height="50dp"
-            android:text="@string/bib_app"
-            android:onClick="showBibToast"
-            />
+            <Button
+                style="@style/MyButtonStyle"
+                android:id="@+id/lib_app"
+                android:text="@string/lib_app"
+                android:onClick="showLibToast"
+                />
 
-        <Button
-            android:layout_width="match_parent"
-            android:id="@+id/xyz_reader_app"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:background="#F08C35"
-            android:layout_height="50dp"
-            android:text="@string/xyz_reader_app"
-            android:onClick="showXyzReaderToast"
-            />
+            <Button
+                style="@style/MyButtonStyle"
+                android:id="@+id/bib_app"
+                android:text="@string/bib_app"
+                android:onClick="showBibToast"
+                />
 
-        <Button
-            android:layout_width="match_parent"
-            android:id="@+id/capstone_mya"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:background="#D50000"
-            android:layout_height="50dp"
-            android:text="@string/capstone_mya"
-            android:onClick="showCapstoneToast"
-            />
+            <Button
+                style="@style/MyButtonStyle"
+                android:id="@+id/xyz_reader_app"
+                android:text="@string/xyz_reader_app"
+                android:onClick="showXyzReaderToast"
+                />
+
+            <Button
+                style="@style/MyButtonStyle"
+                android:id="@+id/capstone_mya"
+                android:background="@color/red"
+                android:text="@string/capstone_mya"
+                android:onClick="showCapstoneToast"
+                />
 
 
-    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
 
 
 

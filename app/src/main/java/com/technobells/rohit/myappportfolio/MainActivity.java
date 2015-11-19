@@ -23,10 +23,10 @@ public class MainActivity extends Activity {
     }
 
     public String message="This Button will launch ";
+
     public void showStreamerToast(View view){
         Toast.makeText(getApplicationContext(), message+getString(R.string.streamer_app), Toast.LENGTH_SHORT).show();
     }
-
 
     public void showScorersToast(View view){
         Toast.makeText(getApplicationContext(),message+getString(R.string.scorers_app), Toast.LENGTH_SHORT).show();
